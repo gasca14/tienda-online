@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+a{
+    font-family: 'Abyssinica SIL', serif;
+}
+
+
+#nav a{
+    color: whitesmoke;
+  }
+  
+#nav a.active {
+    background-color: #04AA6D;
+    border-radius: 1px;
+    color: white;
+  }

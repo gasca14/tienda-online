@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+.pie-pagina{
+    width: 100%;
+    margin-top: 341px;
+    background-color: #093669c4;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;    
+    border-radius: 2px;
+  }
+  .pie-pagina h3{
+    font-family:'Abyssinica SIL', serif;
+    text-align: center;
+    margin-top: 14px;
+    padding-left: 40px;
+  }
+  .pie-pagina ul li{
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .pie-pagina ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .pie-pagina ul li a:hover{
+    color: #30caca;
+    transition: 0.5s;
+    
+  }
+  
+  /* redes sociales */
+  .red-social a{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    
+  }
+  .red-social a{
+    margin-left: 45px;
+  }
+  .red-social p{
+    margin-left: 7px;
+    font-size: 15px;
+  }
+  div .boton-e:hover{
+    transition: 0.5s;
+  }
+  
+  div .boton-e p{
+    display: none;
+    
+  }
+  
+  div .boton-e:hover p{
+    display: block;
+    
+  }
+  .boton-e:nth-child(1):hover{
+    color: #4267B2;
+  }
+  .boton-e:nth-child(2):hover{
+    color: #25D366;
+  }
+  .boton-e:nth-child(3):hover{
+    color: #E1306C;
+  }
+  
+  
+  /* copyright */
+  .derechos{
+    position: absolute;
+    margin-top: 210px;
+  }
+
+  /* para tabletas */
+  @media screen and (max-width: 800px){
+   
+    .pie-pagina{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 500px;
+    }
+  
+    .pie-pagina .derechos{
+     margin-top: 25rem;
+     padding-left: 13rem;
+     padding-top: 70px;
+    }
+  
+    .red-social a{
+      margin-left: 85px;
+  }
+    .red-social ul li{
+        margin-left: 40px;
+    }
+    /* .derechos{
+      padding-top: 70px;
+    } */
+  }
+  /* para smartphones */
+  @media screen and (max-width: 480px){
+    .pie-pagina{
+        height: 575px;
+    }
+    .derechos{
+        padding-top: 80px;
+    }
+  
+  }
