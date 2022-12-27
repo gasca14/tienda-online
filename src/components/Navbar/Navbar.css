@@ -9,7 +9,7 @@ a{
   }
   
 #nav a.active {
-    background-color: #04AA6D;
-    border-radius: 1px;
+    background-color: #04aaaa;
+    border-radius: 2px;
     color: white;
   }

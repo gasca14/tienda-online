@@ -1,0 +1,10 @@
+.signup {
+    color: #c71622;
+    font-weight: bold;
+  }
+  
+  .signup:hover {
+    color: #dd912c;
+    cursor: pointer;
+  }
+
