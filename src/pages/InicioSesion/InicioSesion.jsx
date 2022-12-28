@@ -25,7 +25,6 @@ const InicioSesion = () => {
         event.preventDefault();
         console.log(form);
         if (typeForm === 'signin') {
-
             loginService(form)
                 .then(response => {
                     console.log(response);
@@ -35,7 +34,6 @@ const InicioSesion = () => {
                 })
         }
         else {
-
 
             registerService(form)
                 .then(response => {
@@ -63,7 +61,7 @@ const InicioSesion = () => {
             </div>
             <div className="mt-5 d-flex justify-content-center align-items-center vh-90">
                 <div className="bg-white p-5 rounded-5 text-success shadow " style={{ width: '25rem' }}>
-                    
+
                     <div className='text-center fs-1 fw-bold text-coffe'>
                         <h1>{typeForm === 'signin' ? 'Sign In' : 'Signup'}</h1>
                     </div>

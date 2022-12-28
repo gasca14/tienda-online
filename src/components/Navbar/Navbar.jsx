@@ -22,7 +22,7 @@ function Navbar() {
                                 <NavLink className="nav-link" to="/iniciosesion">Iniciar sesion</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/catalogo">Catalogo Perfumes</NavLink>
+                                <NavLink className="nav-link" to="/catalogo">Catalogo</NavLink>
                             </li>
                         </ul>
                     </div>
