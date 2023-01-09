@@ -1,146 +1,35 @@
-import perfum from '../../assets/images/perfumes/chanel.jpg' 
-
+import { getProducts } from '../../services/Product.services';
+import { useEffect, useState } from 'react'
+import '../../pages/Catalogo/CatalogoPerfumes.css'
+import {Link} from 'react-router-dom'
 function CatalogoPerfumes() {
+    const [productos, setProductos] = useState([]);
+    useEffect(() => {
+        getProducts().then((res) => {
+            setProductos(res.data);
+        })
+    }, [])
     return (
         <>
             <div className="container mt-5 text-center">
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum}sName="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
+                    {productos.map((producto) => {
+                        return (
+                            <div className="col-lg-3 col-md-6" key={producto._id}>
+                                <div className="card mt-4" >
+                                    <img src={producto.image} className="card-img-top" alt="perfum" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">${producto.precio}</h5>
+                                        <h4 className="card-title">{producto.nombre}</h4>
+                                        <p className="card-text">{producto.descripcion}</p>
+                                        <Link to={`/detalleproducto/${producto._id}`} className="btn btn-primary mb-2">Detalles</Link><br />
+                                        <Link className='btn btn-success'>Agregar Carrito</Link>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card">
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row mt-4">
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card">
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row mt-4">
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card" >
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 ">
-                        <div className="card">
-                            <img src={perfum} className="card-img-top" alt="perfum" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chanel</h5>
-                                <p className="card-text">El perfume de la casa chanel es de la mas alta.</p>
-                                <button className="btn btn-primary mb-2">Detalles</button><br />
-                                <button className='btn btn-success'>Agregar Carrito</button>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
+
                 </div>
             </div>
         </>

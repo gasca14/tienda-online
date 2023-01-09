@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { loginService, registerService } from '../../services/Auth';
-import '../InicioSesion/InicioSesion.css'
+import './Signin.css'
 import img from '../../assets/images/man.jpg'
 
 
-const InicioSesion = () => {
+const Signin = () => {
     const [typeForm, setTypeForm] = useState('signin');
     const [form, setForm] = useState({
         nombre: '',
@@ -23,7 +23,7 @@ const InicioSesion = () => {
 
     const saveData = (event) => {
         event.preventDefault();
-        console.log(form);
+        // console.log(form);
         if (typeForm === 'signin') {
             loginService(form)
                 .then(response => {
@@ -63,7 +63,7 @@ const InicioSesion = () => {
                 <div className="bg-white p-5 rounded-5 text-success shadow " style={{ width: '25rem' }}>
 
                     <div className='text-center fs-1 fw-bold text-coffe'>
-                        <h1>{typeForm === 'signin' ? 'Sign In' : 'Signup'}</h1>
+                        <h1>{typeForm === 'signin' ? 'Sign In' : 'Sign Up'}</h1>
                     </div>
                     <form onSubmit={saveData}>
                         {typeForm === 'signup' &&
@@ -119,4 +119,4 @@ const InicioSesion = () => {
     );
 }
 
-export default InicioSesion;
+export default Signin;

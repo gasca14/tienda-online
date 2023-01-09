@@ -30,9 +30,9 @@ function Footer() {
                 <div>
                     <h3>Siguenos</h3>
                     <div className="red-social">
-                        <Link className="boton-e" to="*"><i class="fa-brands fa-facebook"></i><p>Facebook</p></Link>
-                        <Link className="boton-e" to="*"><i class="fa-brands fa-whatsapp"></i><p>Whatsapp</p></Link>
-                        <Link className="boton-e" to="*"><i class="fa-brands fa-instagram"></i><p>Instagram</p></Link>
+                        <a className="boton-e" href='https://github.com/' target='_blank' rel='noreferrer noopener'><i className="fa-brands fa-facebook"></i><p>Facebook</p></a>
+                        <Link className="boton-e" to="*"><i className="fa-brands fa-whatsapp"></i><p>Whatsapp</p></Link>
+                        <Link className="boton-e" to="*"><i className="fa-brands fa-instagram"></i><p>Instagram</p></Link>
                     </div>
                 </div>
                 <div className="derechos">
