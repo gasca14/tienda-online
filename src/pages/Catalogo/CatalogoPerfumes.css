@@ -3,7 +3,3 @@
     height: 250px;
     object-fit: contain;
 }
-
-.card-body{
-    object-fit: fill;
-}

@@ -17,7 +17,6 @@ function Footer() {
                     <h3>Servicio al cliente</h3>
                     <ul>
                         <li><Link className="nav-link active" to="*">Contactanos</Link></li>
-                        <li><Link className="nav-link active" to="*">Reserva</Link></li>
                     </ul>
                 </div>
                 <div>
@@ -30,9 +29,9 @@ function Footer() {
                 <div>
                     <h3>Siguenos</h3>
                     <div className="red-social">
-                        <a className="boton-e" href='https://github.com/' target='_blank' rel='noreferrer noopener'><i className="fa-brands fa-facebook"></i><p>Facebook</p></a>
-                        <Link className="boton-e" to="*"><i className="fa-brands fa-whatsapp"></i><p>Whatsapp</p></Link>
-                        <Link className="boton-e" to="*"><i className="fa-brands fa-instagram"></i><p>Instagram</p></Link>
+                        <a className="boton-e" href='https://www.facebook.com/' target='_blank' rel='noreferrer noopener'><i className="fa-brands fa-facebook"></i><p>Facebook</p></a>
+                        <a className="boton-e" href='https://twitter.com/?lang=es' target='_blank' rel='noreferrer noopener'><i className="fa-brands fa-twitter"></i><p>Twitter</p></a>
+                        <a className="boton-e" href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'><i className="fa-brands fa-instagram"></i><p>Instagram</p></a>
                     </div>
                 </div>
                 <div className="derechos">

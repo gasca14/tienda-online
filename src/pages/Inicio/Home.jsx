@@ -5,24 +5,30 @@ import img from '../../assets/images/perfumes/dior.jpg'
 function Home() {
     return (
         <>
-             <div>
+            <div>
                 <img id='portada' src={port} alt="portada" />
             </div>
             <div className="container">
-                <div className="row mt-4">
+                <div className="row mt-5">
                     <div className="col-md-6">
                         <img id='reference' src={img} alt="img" />
                     </div>
                     <div className="col-md-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia earum commodi doloribus animi culpa impedit ex delectus velit maiores! Quod, perferendis beatae fugiat quaerat consectetur ducimus perspiciatis minus! Sapiente!
-                        Porro magni voluptatibus architecto cumque inventore optio officiis cum eum impedit omnis doloribus voluptatem doloremque repellat nemo obcaecati, sunt minus, consequatur maxime autem voluptatum? Quo sapiente possimus fugiat aspernatur. Quis?
-                        Quia modi voluptate deleniti ipsam, atque voluptatibus nesciunt at, iste distinctio voluptas deserunt nisi officia soluta non itaque repellat enim ad, in quae fugiat laborum. Similique maxime doloribus doloremque perspiciatis.
-                        Nostrum inventore exercitationem obcaecati, ipsum dignissimos odit consectetur accusantium impedit molestias nam sunt assumenda harum veritatis recusandae! Tempora in tempore, illo similique doloremque fugit dolorum laudantium velit amet inventore sunt.
-                        Aliquam deserunt laudantium pariatur ipsum error natus, culpa, quo nisi quam iusto cumque facilis excepturi tempora libero ad velit. Architecto deserunt iure ducimus deleniti quo officia placeat vel non nam!
-                        Obcaecati exercitationem autem tempora adipisci laborum, dolorum corrupti fugit fugiat nam placeat mollitia molestias temporibus quibusdam. Consequatur laudantium tempora quidem dolores inventore vel nemo dolor sapiente cum? Obcaecati, consectetur sunt.</p>
+                        <h3>The parfum desde 1992</h3>
+                        <p>Te ofrecemos la experiencia mas amplia en perfumeria, con mas de 30 anos de experiencia, nos encanta el trato a nuestros cleintes, pues son lo mas especial para nosotros, te ayudaremos a encontrar la fragancia indicada de acuerdo a tus necesidades, ya sea para uso de diario, para algun evento o dia especial, asi como si la necesitas para brindarsela como obsequio a esa personita especial!</p>
+                        <p>Contamos con todas las marcas de perfumeria de la mas alta gama, nuestro sello nos distingue a lo largo de los anos y el tiempo y pasion que le dedicamos a nuestro negocio, asi como a nuestros clientes</p>
+                        <p>Acercate a una de nuestras sucursales, o bien contactanoa a trabes de nuestro sitio web y redes sociales. sera un placer atenderte!</p>
                     </div>
                 </div>
+                <div className="row mt-5">
+                    <dic className="col-12">
+                        <h3>Contacto</h3>
+
+                        <p>Visitanos en nuestra sucursal ubicada en The parfum, San Luis Potosi, Lomas 4ta seccion #30.</p>
+                    </dic>
+                </div>
             </div>
+
         </>
     );
 }

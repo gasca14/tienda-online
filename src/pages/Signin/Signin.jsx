@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { loginService } from '../../services/Auth';
 import './Signin.css'
-import img from '../../assets/images/man.jpg'
 import { Link } from 'react-router-dom';
-
+import Swal from 'sweetalert2'
 
 const Signin = () => {
     const [typeForm, setTypeForm] = useState('signin');
@@ -21,16 +20,39 @@ const Signin = () => {
 
     const saveData = (event) => {
         event.preventDefault();
-        // console.log(form);
-        if (typeForm === 'signin') {
-            loginService(form)
-                .then(response => {
-                    console.log(response);
+        loginService(form)
+            .then(response => {
+                console.log(response);
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-center',
+                    showConfirmButton: false,
+                    timer: 1200,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                      toast.addEventListener('mouseenter', Swal.stopTimer)
+                      toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                  })
+                  
+                  Toast.fire({
+                    icon: 'success',
+                    title: 'Mensaje:',
+                    text: 'Bienvenido!'
+                  })
+
+            })
+            .catch(error => {
+                console.log(error);
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'error',
+                    title: 'Mensaje:',
+                    text: 'Login incorrecto!',
+                    showConfirmButton: false,
+                    timer: 1500
                 })
-                .catch(error => {
-                    console.log(error);
-                })
-        }
+            })
     }
 
 
@@ -41,9 +63,9 @@ const Signin = () => {
 
     return (
         <>
-            <div>
+            {/* <div>
                 <img id='img' src={img} alt="portada" />
-            </div>
+            </div> */}
             <div className="mt-5 d-flex justify-content-center align-items-center vh-90">
                 <div className="bg-white p-5 rounded-5 text-success shadow " style={{ width: '25rem' }}>
 
@@ -51,7 +73,7 @@ const Signin = () => {
                         <h1>Sign In</h1>
                     </div>
                     <form onSubmit={saveData}>
-                                
+
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="email" className="form-control" name="email" placeholder='Ingresa tu email' required onChange={handleInputChange} />
@@ -64,7 +86,7 @@ const Signin = () => {
                         <button
                             type='submit'
                             className='btn btn-success w-100 mt-4 fw-semibold shadow-sm'>
-                            {typeForm === 'signin' ? 'Sign In' : 'Sign Up'}
+                            Sign In
                         </button>
                     </form>
                     {typeForm === 'signin' &&

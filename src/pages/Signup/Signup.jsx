@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { registerService } from '../../services/Auth';
-// import './Signin.css'
-import img from '../../assets/images/man.jpg'
+// import img from '../../assets/images/man.jpg'
 import { Link } from 'react-router-dom';
-
+import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 
 const Signup = () => {
     const [typeForm, setTypeForm] = useState('signup');
@@ -15,6 +15,7 @@ const Signup = () => {
         password: ''
     });
 
+    const navigate = useNavigate()
     const handleInputChange = (event) => {
         setForm({
             ...form,
@@ -25,15 +26,32 @@ const Signup = () => {
     const saveData = (event) => {
         event.preventDefault();
         // console.log(form);
-        if (typeForm === 'signup') {
+        // if (typeForm === 'signup') {
             registerService(form)
                 .then(response => {
                     console.log(response);
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Mensaje:',
+                        text: 'Usuario agregado correctamente!',
+                        showConfirmButton: false,
+                        timer: 1500
+                      }).then(()=>{
+                            navigate('/signin')
+                      })
                 })
                 .catch(error => {
                     console.log(error);
+                    Swal.fire({
+                        position: 'top-center',
+                        icon: 'info',
+                        title: 'Mensaje:',
+                        text: 'Usuario o correo ya existentes!',
+                        showConfirmButton: false,
+                        timer: 1700
+                    })
                 })
-        }
     }
 
     const showSignIn = () => {
@@ -44,9 +62,9 @@ const Signup = () => {
 
     return (
         <>
-            <div>
+            {/* <div>
                 <img id='img' src={img} alt="portada" />
-            </div>
+            </div> */}
             <div className="mt-5 d-flex justify-content-center align-items-center vh-90">
                 <div className="bg-white p-5 rounded-5 text-success shadow " style={{ width: '25rem' }}>
 
@@ -82,14 +100,14 @@ const Signup = () => {
                         <button
                             type='submit'
                             className='btn btn-success w-100 mt-4 fw-semibold shadow-sm'>
-                            {typeForm === 'signin' ? 'Sign In' : 'Sign Up'}
+                            Sign Up
                         </button>
                     </form>
 
                     {typeForm === 'signup' &&
                         <div className="d-flex gap-1 justify-content-center mt-1">
                             <div>¿Ya tienes cuenta?</div>
-                            <Link to='/signin' className="signup" onClick={showSignIn}>Sign In</Link>
+                            <Link to='/signin' className="signup" onClick={showSignIn}>SignIn</Link>
                         </div>
                     }
                 </div>
