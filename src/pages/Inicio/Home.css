@@ -1,6 +1,6 @@
 #portada{
     width: 100%;
-    height: 25rem;
+    height: 23rem;
 }
 
 #reference{
@@ -8,4 +8,24 @@
     height: 25rem;
     object-fit: cover;
     border-radius: 15px;
+}
+@media screen and (max-width: 800px) {
+    #portada{
+        height: 13rem;
+    }
+    #reference{
+        height: 13rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    #portada{
+        height: 9rem;
+    }
+    #reference{
+        width: 50%;
+        height: 10rem;
+    }
+    #pres{
+        margin-top: 2rem;
+    }
 }

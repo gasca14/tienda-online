@@ -8,22 +8,22 @@ function Footer() {
                 <div>
                     <h3>Nosotros</h3>
                     <ul>
-                        <li><Link className="nav-link active" to="*" >Acerca de</Link></li>
-                        <li><Link className="nav-link active" to="*">Sucursales</Link></li>
-                        <li><Link className="nav-link active" to="*">Promociones en sucursales</Link></li>
+                        <li><Link className="nav-link active" to="/home" >Acerca de</Link></li>
+                        <li><Link className="nav-link active" to="/notfound">Sucursales</Link></li>
+                        <li><Link className="nav-link active" to="/catalogo">Promociones en sucursales</Link></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Servicio al cliente</h3>
                     <ul>
-                        <li><Link className="nav-link active" to="*">Contactanos</Link></li>
+                        <li><Link className="nav-link active" to="/notfound">Contactanos</Link></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Legales</h3>
                     <ul>
-                        <li><Link className="nav-link active" to="*">Terminos y condiciones</Link></li>
-                        <li><Link className="nav-link active" to="*">Aviso de privacidad</Link></li>
+                        <li><Link className="nav-link active" to="/notfound">Terminos y condiciones</Link></li>
+                        <li><Link className="nav-link active" to="/notfound">Aviso de privacidad</Link></li>
                     </ul>
                 </div>
                 <div>

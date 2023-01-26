@@ -1,4 +1,4 @@
-import '../Inicio/Home.css'
+import '../../pages/Inicio/Home.css'
 import port from '../../assets/images/feme.jpg'
 import img from '../../assets/images/perfumes/dior.jpg'
 
@@ -13,7 +13,7 @@ function Home() {
                     <div className="col-md-6">
                         <img id='reference' src={img} alt="img" />
                     </div>
-                    <div className="col-md-6">
+                    <div id='pres' className="col-md-6">
                         <h3>The parfum desde 1992</h3>
                         <p>Te ofrecemos la experiencia mas amplia en perfumeria, con mas de 30 anos de experiencia, nos encanta el trato a nuestros cleintes, pues son lo mas especial para nosotros, te ayudaremos a encontrar la fragancia indicada de acuerdo a tus necesidades, ya sea para uso de diario, para algun evento o dia especial, asi como si la necesitas para brindarsela como obsequio a esa personita especial!</p>
                         <p>Contamos con todas las marcas de perfumeria de la mas alta gama, nuestro sello nos distingue a lo largo de los anos y el tiempo y pasion que le dedicamos a nuestro negocio, asi como a nuestros clientes</p>

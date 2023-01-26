@@ -65,10 +65,10 @@ const Signup = () => {
             {/* <div>
                 <img id='img' src={img} alt="portada" />
             </div> */}
+            <div className="container">
             <div className="mt-5 d-flex justify-content-center align-items-center vh-90">
                 <div className="bg-white p-5 rounded-5 text-success shadow " style={{ width: '25rem' }}>
-
-                    <div className='text-center fs-1 fw-bold text-coffe'>
+                    <div className='text-center fs-1 fw-bold'>
                         <h1>Sign Up</h1>
                     </div>
                     <form onSubmit={saveData}>
@@ -76,23 +76,18 @@ const Signup = () => {
                                    <label htmlFor="nombre" className="form-label">Nombre</label>
                                      <input type="text" className="form-control" name="nombre" placeholder='Ingresa tu nombre' required onChange={handleInputChange} />
                                  </div>
-
                                  <div className="mb-3">
                                      <label htmlFor="apellido" className="form-label">Apellido</label>
                                      <input type="text" className="form-control" name="apellido" placeholder='Ingresa tu apellido' required onChange={handleInputChange} />
                                  </div>
-
                                  <div className="mb-3">
                                      <label htmlFor="edad" className="form-label">Edad</label>
                                      <input type="number" className="form-control" name="edad" placeholder='Ingresa tu edad' required onChange={handleInputChange} />
                                  </div>
-
-                             
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="email" className="form-control" name="email" placeholder='Ingresa tu email' required onChange={handleInputChange} />
                         </div>
-
                         <div className="mb-3">
                             <label htmlFor="password" className="form-label">Password</label>
                             <input type="password" className="form-control" name="password" placeholder='Ingresa tu password' required onChange={handleInputChange} />
@@ -103,7 +98,6 @@ const Signup = () => {
                             Sign Up
                         </button>
                     </form>
-
                     {typeForm === 'signup' &&
                         <div className="d-flex gap-1 justify-content-center mt-1">
                             <div>¿Ya tienes cuenta?</div>
@@ -111,6 +105,7 @@ const Signup = () => {
                         </div>
                     }
                 </div>
+            </div>
             </div>
         </>
     );

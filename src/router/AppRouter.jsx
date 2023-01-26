@@ -5,6 +5,7 @@ import Signup from '../pages/Signup/Signup';
 import CatalogoPerfumes from '../pages/Catalogo/CatalogoPerfumes';
 import Carrito from '../pages/Carrito/Carrito';
 import DetalleProducto from '../pages/DetalleProducto/DetalleProducto';
+import NotFound from '../pages/NotFound/NotFound';
 
 function AppRouter() {
     return (
@@ -16,7 +17,7 @@ function AppRouter() {
                 <Route path='/catalogo' element={<CatalogoPerfumes/>}/>
                 <Route path='/detalleproducto/:id' element={<DetalleProducto/>}/>
                 <Route path='/carrito' element={<Carrito/>}/>
-
+                <Route path='/notfound' element={<NotFound/>}/>
 
                 <Route path='/' element={<Navigate to="/home"/>}/>
                 <Route path='*' element={<Navigate to="/NotFound"/>}/>
