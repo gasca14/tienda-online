@@ -29,7 +29,6 @@ function CatalogoPerfumes() {
                             </div>
                         )
                     })}
-
                 </div>
             </div>
         </>
