@@ -5,6 +5,7 @@ import { useParams, Link } from 'react-router-dom'
 const DetalleProducto = () => {
     const { id } = useParams();
     const [producto, setProducto] = useState({})
+    
     useEffect(() => {
         // document.title = 'detalle-producto'
         getProduct(id).then((res) => {

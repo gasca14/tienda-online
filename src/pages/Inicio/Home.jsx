@@ -34,10 +34,10 @@ function Home() {
                     </div>
                 </div>
                 <div className="row mt-5">
-                    <dic className="col-12">
+                    <div className="col-12">
                         <h3 className={texto}>Contacto</h3>
                         <p className={texto}>Visitanos en nuestra sucursal ubicada en The parfum, San Luis Potosi, Lomas 4ta seccion #30.</p>
-                    </dic>
+                    </div>
                 </div>
             </div>
 

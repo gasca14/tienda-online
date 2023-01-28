@@ -1,26 +1,26 @@
-.card{
+#tarjeta{
     height: 660px;
 }
 
-.card-img-top{
+#tarjeta-img{
     width: 100%;
     height: 270px;
     object-fit: contain;
 }
 
 @media screen and (max-width: 800px) {
-    .card{
+    #tarjeta{
         height: 517px;
     }
-    .card-img-top{
+    #tarjeta-img{
         height: 140px;
     }
 }
 @media screen and (max-width: 480px) {
-    .card{
+    #tarjeta{
         height: 478px;
     }
-    .card-img-top{
+    #tarjeta-img{
         height: 120px;
     }
 }

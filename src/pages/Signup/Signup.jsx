@@ -94,12 +94,12 @@ const Signup = () => {
                         </div>
                         <button
                             type='submit'
-                            className='btn btn-success w-100 mt-4 fw-semibold shadow-sm'>
+                            className='btn btn-success w-100 mt-2 fw-semibold shadow-sm'>
                             Sign Up
                         </button>
                     </form>
                     {typeForm === 'signup' &&
-                        <div className="d-flex gap-1 justify-content-center mt-1">
+                        <div className="d-flex gap-2 justify-content-center mt-3">
                             <div>¿Ya tienes cuenta?</div>
                             <Link to='/signin' className="signup" onClick={showSignIn}>SignIn</Link>
                         </div>

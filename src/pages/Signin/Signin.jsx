@@ -3,6 +3,7 @@ import { loginService } from '../../services/Auth';
 import './Signin.css'
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 
 const Signin = () => {
     const [typeForm, setTypeForm] = useState('signin');
@@ -11,6 +12,7 @@ const Signin = () => {
         password: ''
     });
 
+    const navigate = useNavigate()
     const handleInputChange = (event) => {
         setForm({
             ...form,
@@ -25,9 +27,9 @@ const Signin = () => {
                 console.log(response);
                 const Toast = Swal.mixin({
                     toast: true,
-                    position: 'top-center',
+                    position: 'top',
                     showConfirmButton: false,
-                    timer: 1200,
+                    timer: 1400,
                     timerProgressBar: true,
                     didOpen: (toast) => {
                       toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -39,6 +41,8 @@ const Signin = () => {
                     icon: 'success',
                     title: 'Mensaje:',
                     text: 'Bienvenido!'
+                  }).then(()=>{
+                    navigate('/perfilusuario')
                   })
 
             })
@@ -46,7 +50,7 @@ const Signin = () => {
                 console.log(error);
                 Swal.fire({
                     position: 'top-center',
-                    icon: 'error',
+                    icon: 'info',
                     title: 'Mensaje:',
                     text: 'Login incorrecto!',
                     showConfirmButton: false,
@@ -83,14 +87,14 @@ const Signin = () => {
                         </div>
                         <button
                             type='submit'
-                            className='btn btn-success w-100 mt-4 fw-semibold shadow-sm'>
+                            className='btn btn-success w-100 mt-2 fw-semibold shadow-sm'>
                             Sign In
                         </button>
                     </form>
                     {typeForm === 'signin' &&
-                        <div className="d-flex gap-1 justify-content-center mt-1">
+                        <div className="d-flex gap-2 justify-content-center mt-3">
                             <div>¿No tienes cuenta?</div>
-                            <Link to='/signup' className="signup" onClick={showSignUp}>Sign Up</Link>
+                            <Link to='/signup' className="signup" onClick={showSignUp}>SignUp</Link>
                         </div>
                     }
                 </div>
