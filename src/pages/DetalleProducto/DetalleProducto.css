@@ -1,0 +1,17 @@
+#img-detalle{
+    height: 18rem;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+    #img-detalle{
+        height: 10rem;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 480px) {
+    #img-detalle{
+        height: 7rem;
+        object-fit: contain;
+    }
+}

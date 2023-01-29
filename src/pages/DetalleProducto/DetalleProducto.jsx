@@ -1,7 +1,7 @@
+import '../DetalleProducto/DetalleProducto.css'
 import { getProduct } from '../../services/Product.services';
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-
 const DetalleProducto = () => {
     const { id } = useParams();
     const [producto, setProducto] = useState({})
@@ -18,7 +18,7 @@ const DetalleProducto = () => {
                 <div className="row">
                     <div className="col-md-12" key={producto._id}>
                         <div className="card mt-4" >
-                            <img src={producto.image} className="card-img-top" alt="perfum" />
+                            <img id='img-detalle' src={producto.image} className="card-img-top" alt="perfum" />
                             <div className="card-body">
                                 <h5 className="card-title">${producto.precio}.00</h5>
                                 <h4 className="card-title">{producto.nombre}</h4>
