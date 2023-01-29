@@ -8,7 +8,7 @@ const Carrito = () => {
                     {/* <PaypalCheckoutButton currency={"MXN"} amount={1} showSpinner={false} /> */}
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title text-center">Resumen de compra</h5>
+                            <h5 className="card-title text-center">Resumen de compra:</h5>
                             <p id='resumen' className="card-text">Tenemos envios gratuitos, aprovecha y compra nuestros productos.</p>
                             <div className="row">
                                 <div className="col-md-6">

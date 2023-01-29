@@ -108,6 +108,9 @@
       padding-top: 70px;
     } */
   }
+  .footer{
+    font-size: 30px;
+  }
   /* para smartphones */
   @media screen and (max-width: 480px){
     .pie-pagina{
