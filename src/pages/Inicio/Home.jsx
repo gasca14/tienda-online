@@ -36,7 +36,9 @@ function Home() {
                 <div className="row mt-5">
                     <div className="col-12">
                         <h3 className={texto}>Contacto</h3>
-                        <p className={texto}>Visitanos en nuestra sucursal ubicada en The parfum, San Luis Potosi, Lomas 4ta seccion #30.</p>
+                        <p className={texto}>Visitanos en nuestra sucursal ubicada en San Luis Potosi, Lomas 4ta seccion #30.</p>
+                        <p>Tel: 4449801345</p>
+                        <p>De Lunes a viernes de 9:30 am a 8:00 pm.</p>
                     </div>
                 </div>
             </div>

@@ -13,4 +13,9 @@ const registerService = async (data) => {
     return response.data;
 };
 
-export { loginService, registerService };
+const getProfile = async(data)=>{
+    const response = await axios.get(`${URL_ROOT}/usuarios/perfil`,data);
+    return response.data;
+}
+
+export { loginService, registerService, getProfile };

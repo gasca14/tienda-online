@@ -8,13 +8,13 @@ const Carrito = () => {
                     {/* <PaypalCheckoutButton currency={"MXN"} amount={1} showSpinner={false} /> */}
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">Resumen de compra</h5>
-                            <p className="card-text">Tenemos envios gratuitos, aprovecha y compra nuestros productos.</p>
+                            <h5 className="card-title text-center">Resumen de compra</h5>
+                            <p id='resumen' className="card-text">Tenemos envios gratuitos, aprovecha y compra nuestros productos.</p>
                             <div className="row">
                                 <div className="col-md-6">
-                                    <p>Subtotal: <b>$100.00</b></p>
-                                    <p>Envio: <b> 100.00</b></p>
-                                    <p>Total: <b>  200</b></p>
+                                    <p id='total'>Subtotal:<b>$4800.00</b></p>
+                                    <p id='total'>Envio:<b><s>$100.00</s></b></p>
+                                    <p id='total'>Total:<b> $4800.00</b></p>
                                 </div>
                             </div>
                             <div className="text-center">
@@ -29,13 +29,13 @@ const Carrito = () => {
                 <div className="card mb-3" style={{ maxWidth: 540 }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://picsum.photos/300" className="img-fluid rounded-start" alt="..." />
+                            <img src="https://ss701.liverpool.com.mx/xl/1109452498.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h5 className="card-title">$1200.00</h5>
-                                <h4>Nautica</h4>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 className="card-title">$1400.00</h5>
+                                <h4>Polo Red</h4>
+                                <p className="card-text">Fragancia de hombre amaderada.</p>
                                 {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                                 <button className='btn btn-danger float-start'>Eliminar</button>
                             </div>
@@ -45,29 +45,29 @@ const Carrito = () => {
                 <div className="card mb-3" style={{ maxWidth: 540 }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://picsum.photos/300" className="img-fluid rounded-start" alt="..." />
-                        </div>
-                        <div className="col-md-8">
-                            <div className="card-body">
-                                <h5 className="card-title">$1500.00</h5>
-                                <h4>Dior</h4>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
-                                <button className='btn btn-danger float-start'>Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card mb-3" style={{ maxWidth: 540 }}>
-                    <div className="row g-0">
-                        <div className="col-md-4">
-                            <img src="https://picsum.photos/300" className="img-fluid rounded-start" alt="..." />
+                            <img src="https://ss701.liverpool.com.mx/xl/1109736461.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title">$1700.00</h5>
-                                <h4>Channel</h4>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h4>Dior Savage</h4>
+                                <p className="card-text">Fragancia de hombre con aroma embriagador.</p>
+                                {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
+                                <button className='btn btn-danger float-start'>Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card mb-3" style={{ maxWidth: 540 }}>
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="https://ss701.liverpool.com.mx/xl/1068402758.jpg" className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title">$1700.00</h5>
+                                <h4>Coco Channel</h4>
+                                <p className="card-text">Fragancia de mujer con un toque dulce.</p>
                                 {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                                 <button className='btn btn-danger float-start'>Eliminar</button>
                             </div>

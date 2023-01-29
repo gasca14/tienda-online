@@ -45,7 +45,7 @@ const Signin = () => {
                     navigate('/perfilusuario')
                   })
 
-            })
+            })  
             .catch(error => {
                 console.log(error);
                 Swal.fire({
