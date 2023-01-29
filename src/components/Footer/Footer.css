@@ -113,8 +113,9 @@
     .pie-pagina{
         height: 575px;
     }
-    .derechos{
-        padding-top: 80px;
+    .derechos small{
+        /* margin: 15rem; */
+        padding-right: rem;
     }
   
   }

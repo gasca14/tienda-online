@@ -15,7 +15,8 @@ p{
 
 #portada{
     width: 100%;
-    height: 23rem;
+    height: 24rem;
+    /* object-fit: fill; */
 }
 
 #principal{
@@ -36,6 +37,7 @@ p{
     #reference{
         height: 13rem;
     }
+
 }
 @media screen and (max-width: 480px) {
     #portada{
@@ -47,5 +49,8 @@ p{
     }
     #pres{
         margin-top: 2rem;
+    }
+    #modo{
+     margin-top: 2rem;   
     }
 }

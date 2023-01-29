@@ -2,9 +2,9 @@ import '../Carrito/Carrito.css'
 import PaypalCheckoutButton from "../../components/PaypalCheckoutButton";
 const Carrito = () => {
     return (
-        <>  <div className="container mt-5">
+        <>  <div className="container">
             <div className="row">
-                <div className="col-6">
+                <div className="col-md-6 col-sm-12 mt-4">
                     {/* <PaypalCheckoutButton currency={"MXN"} amount={1} showSpinner={false} /> */}
                     <div className="card">
                         <div className="card-body">
@@ -25,27 +25,26 @@ const Carrito = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6 col-sm-12 mt-4">
                 <div className="card mb-3" style={{ maxWidth: 540 }}>
-                    <div className="row g-0">
+                    <div id='contenido' className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://ss701.liverpool.com.mx/xl/1109452498.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img id='car' src="https://ss701.liverpool.com.mx/xl/1109452498.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title">$1400.00</h5>
                                 <h4>Polo Red</h4>
                                 <p className="card-text">Fragancia de hombre amaderada.</p>
-                                {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                                 <button className='btn btn-danger float-start'>Eliminar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="card mb-3" style={{ maxWidth: 540 }}>
-                    <div className="row g-0">
+                    <div id='contenido' className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://ss701.liverpool.com.mx/xl/1109736461.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img id='car' src="https://ss701.liverpool.com.mx/xl/1109736461.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -59,9 +58,9 @@ const Carrito = () => {
                     </div>
                 </div>
                 <div className="card mb-3" style={{ maxWidth: 540 }}>
-                    <div className="row g-0">
+                    <div id='contenido' className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://ss701.liverpool.com.mx/xl/1068402758.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img id='car' src="https://ss701.liverpool.com.mx/xl/1068402758.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">

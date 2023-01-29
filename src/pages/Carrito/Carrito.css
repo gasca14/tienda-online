@@ -18,3 +18,20 @@ h5{
     height: 8rem;
     object-fit: cover;
 }
+
+@media screen and (max-width: 800px) {
+ #car{
+    height: 10rem;
+ }
+ #contenido{
+    height: 17rem;
+ }
+}
+@media screen and (max-width: 480px) {
+    #car{
+        height: 7rem;
+     }
+     #contenido{
+        height: 24rem;
+     }  
+}

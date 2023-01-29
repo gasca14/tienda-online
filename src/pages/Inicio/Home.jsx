@@ -26,7 +26,7 @@ function Home() {
                         <img id='reference' src={img} alt="img" />
                     </div>
                     <div className="col-md-6">
-                        <button type='button' className={btn} onClick={cambiarTema}>{theme === 'dark'? 'Light Theme': 'Dark Theme'}</button>
+                        <button id='modo' type='button' className={btn} onClick={cambiarTema}>{theme === 'dark'? 'Light Theme': 'Dark Theme'}</button>
                         <h3 id='principal' className={texto}>The parfum desde 1992</h3>
                         <p className={texto}>Te ofrecemos la experiencia mas amplia en perfumeria, con mas de 30 anos de experiencia, nos encanta el trato a nuestros cleintes, pues son lo mas especial para nosotros, te ayudaremos a encontrar la fragancia indicada de acuerdo a tus necesidades, ya sea para uso de diario, para algun evento o dia especial, asi como si la necesitas para brindarsela como obsequio a esa personita especial!</p>
                         <p className={texto}>Contamos con todas las marcas de perfumeria de la mas alta gama, nuestro sello nos distingue a lo largo de los anos y el tiempo y pasion que le dedicamos a nuestro negocio, asi como a nuestros clientes</p>

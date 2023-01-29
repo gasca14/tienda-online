@@ -9,7 +9,7 @@ h4{
 }
 
 #tarjeta{
-    height: 660px;
+    height: 675px;
 }
 
 #tarjeta-img{
@@ -28,7 +28,7 @@ h4{
 }
 @media screen and (max-width: 480px) {
     #tarjeta{
-        height: 478px;
+        height: 498px;
     }
     #tarjeta-img{
         height: 120px;
