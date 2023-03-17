@@ -1,5 +1,5 @@
 import '../Inicio/Home.css'
-import port from '../../assets/images/feme.jpg'
+import port from '../../assets/images/channel.jpg'
 import img from '../../assets/images/perfumes/dior.jpg'
 import React, { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';

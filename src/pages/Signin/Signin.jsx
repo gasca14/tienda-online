@@ -87,7 +87,7 @@ const Signin = () => {
                         </div>
                         <button
                             type='submit'
-                            className='btn btn-success w-100 mt-2 fw-semibold shadow-sm'>
+                            className='btn btn-outline-success w-100 mt-2 fw-semibold shadow-sm'>
                             Sign In
                         </button>
                     </form>

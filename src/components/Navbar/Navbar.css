@@ -9,11 +9,12 @@ a{
   }
   
 #nav a.active {
-    background-color: #04aaaa;
+    background-color: #00916E;
     border-radius: 2px;
     color: white;
   }
 #log{
+  border-radius: 4px;
   width: 70px;
   height: 40px;
 }
