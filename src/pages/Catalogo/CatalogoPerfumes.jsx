@@ -11,7 +11,7 @@ function CatalogoPerfumes() {
     }, [])
     return (
         <>
-            <div className="container mt-5 text-center">
+            <div className="p-5 text-center">
                 <div className="row">
                     {productos.map((producto) => {
                         return (
