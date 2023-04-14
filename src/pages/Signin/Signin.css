@@ -1,11 +1,11 @@
 .signup {
-    color: #c71622;
+    color: blue;
     font-weight: bold;
     text-decoration: none
   }
   
   .signup:hover {
-    color: #277e8d;
+    color: #4ac1c9;
     cursor: pointer;
   }
 

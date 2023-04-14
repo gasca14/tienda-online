@@ -65,7 +65,7 @@ const Carrito = () => {
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title">$1700.00</h5>
-                                <h4>Coco Channel</h4>
+                                <h4>Coco Chanel</h4>
                                 <p className="card-text">Fragancia de mujer con un toque dulce.</p>
                                 {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                                 <button className='btn btn-danger float-start'>Eliminar</button>
