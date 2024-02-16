@@ -1,7 +1,7 @@
 import { getProducts } from '../../services/Product.services';
 import { useEffect, useState } from 'react'
 import '../../pages/Catalogo/CatalogoPerfumes.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 function CatalogoPerfumes() {
     const [productos, setProductos] = useState([]);
     useEffect(() => {

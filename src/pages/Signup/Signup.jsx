@@ -74,23 +74,23 @@ const Signup = () => {
                     <form onSubmit={saveData}>
                     <div className="mb-3">
                                    <label htmlFor="nombre" className="form-label">Nombre</label>
-                                     <input type="text" className="form-control" name="nombre" placeholder='Ingresa tu nombre' required onChange={handleInputChange} />
+                                     <input type="text" className="form-control" name="nombre" id='nombre' placeholder='Ingresa tu nombre' required onChange={handleInputChange} />
                                  </div>
                                  <div className="mb-3">
                                      <label htmlFor="apellido" className="form-label">Apellido</label>
-                                     <input type="text" className="form-control" name="apellido" placeholder='Ingresa tu apellido' required onChange={handleInputChange} />
+                                     <input type="text" className="form-control" name="apellido" id='apellido' placeholder='Ingresa tu apellido' required onChange={handleInputChange} />
                                  </div>
                                  <div className="mb-3">
                                      <label htmlFor="edad" className="form-label">Edad</label>
-                                     <input type="number" className="form-control" name="edad" placeholder='Ingresa tu edad' required onChange={handleInputChange} />
+                                     <input type="number" className="form-control" name="edad" id='edad' placeholder='Ingresa tu edad' required onChange={handleInputChange} />
                                  </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className="form-control" name="email" placeholder='Ingresa tu email' required onChange={handleInputChange} />
+                            <input type="email" className="form-control" name="email" id='email' placeholder='Ingresa tu email' required onChange={handleInputChange} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="password" className="form-label">Password</label>
-                            <input type="password" className="form-control" name="password" placeholder='Ingresa tu password' required onChange={handleInputChange} />
+                            <input type="password" className="form-control" name="password" id='password' placeholder='Ingresa tu password' required onChange={handleInputChange} />
                         </div>
                         <button
                             type='submit'

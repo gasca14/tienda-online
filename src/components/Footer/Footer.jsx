@@ -35,7 +35,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="derechos">
-                    <small>© 2023 The parfum. Todos los derechos reservados. </small>
+                    <small>© 2024 The parfum. Todos los derechos reservados. </small>
                 </div>
             </footer>
         </>
